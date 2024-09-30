@@ -1,0 +1,6 @@
+deno task work-queues:new-task "foo bar baz"
+deno task work-queues:new-task "qux quux"
+deno task work-queues:new-task "corge grault"
+deno task work-queues:new-task "garply waldo"
+deno task work-queues:new-task "fred plugh"
+deno task work-queues:new-task "xyzzy thud"

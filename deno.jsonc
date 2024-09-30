@@ -1,0 +1,18 @@
+{
+  "tasks": {
+    // Hello World example
+    "hello-world:send": "deno run -A hello-world/send.ts",
+    "hello-world:receive": "deno run -A hello-world/receive.ts",
+    // Work Queues example
+    "work-queues:new-task": "deno run -A work-queues/new-task.ts",
+    "work-queues:worker": "deno run -A work-queues/worker.ts",
+    // Topics example
+    "topics:emit": "deno run -A topics/emit.ts",
+    "topics:receive": "deno run -A topics/receive.ts"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1",
+    "@types/amqplib": "npm:@types/amqplib@^0.10.5",
+    "amqplib": "npm:amqplib@^0.10.4"
+  }
+}
