@@ -21,8 +21,8 @@ await channel.assertExchange(exchange, "topic", {
 
 channel.publish(exchange, key, Buffer.from(msg));
 
-console.log(`Sent ${msg} to ${key}`);
+console.log(`Sent "${msg}" to "${key}"`);
 
+await new Promise((resolve) => setTimeout(resolve, 1000));
 await connection.close();
-
 Deno.exit(0);

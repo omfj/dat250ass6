@@ -29,8 +29,6 @@ for (const key of args) {
   await channel.bindQueue(queue.queue, exchange, key);
 }
 
-console.log(`Waiting for logs, on ${args.join(", ")}`);
-
 channel.consume(
   queue.queue,
   (msg) => {

@@ -16,4 +16,4 @@ The code for "Topics" can be found in the `topics` folder.
 
 ## Pending issues
 
-I have not been able to run the topics experiment so far. I will try to fix it as soon as possible.
+No pending issues.

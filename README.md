@@ -60,3 +60,27 @@ deno task work-queues:new-task "Some task
 ![Screenshot](./work-queues/screenshot.png)
 
 ## Experiment 4
+
+### How to run
+
+1. Start the RabbitMQ server
+
+```sh
+docker compose up -d
+```
+
+2. Start the receiver
+
+```sh
+deno task topics:receive
+```
+
+3. Start the sender
+
+```sh
+deno task topics:emit "kern.critical" "A critical kernel error"
+```
+
+#### Screenshot
+
+![Screenshot](./topics/screenshot.png)
